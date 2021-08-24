@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+}
+
+:root{
+    --primaryColor:  #222222;
+    --secondaryColor:  #CE8272;
+    --thirdColor:  #cca17e;
+    --forthColor: #fff;
+    --backgroundColor:  #A0A0A0;
+}
+
+/*encabezado*/
+.encabezado{
+    z-index: 1;
+    position: sticky;
+    left: 0px;
+    top: 0px;
+    justify-content: center;
+}
+
+.oferta{
+    padding: 4px;
+    padding-left: 20px;
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    font-weight: bolder;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.oferta:hover{
+    background-color: var(--forthColor);
+}
+
+/*menu*/
+h1{
+    font-size: 4rem;
+    font-family: inter;
+    padding-top: 60px;
+    padding-left: 480px;
+}
+
+li{
+    border-radius: 5%;
+    list-style: none;
+    margin-right: 35px;
+    display: inline-flex;
+}
+
+.menu{
+    background-color: #d4cec8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu p{
+    font-size: 2.5rem;
+    line-height: normal;
+}
+
+.menu ul{
+    display: flex;
+}
+
+/*formulario registro - inicio sesión*/
+.registro{
+    padding-top: 30px;
+    padding-left: 480px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+::placeholder{
+    color: var(--primaryColor);
+    font-weight: bolder;
+    font-size: 1rem;
+    padding-left: 5px;
+} 
+
+.registro-datos-input,
+.registro-correo-input,
+.registro-password-input,
+.registro-ciudad-input,
+.reseat,
+.send,
+#ciudad{
+    height: 40px;
+    font-family: karla;
+    margin-bottom: 10px;
+}
+
+#ciudad{
+    color: var(--primaryColor);
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+/*botones formulario*/
+button{
+    width: 46%;
+    align-content: center;
+    border: none;
+    border-radius: 15px;
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
+.reseat{
+    background-color: var( --thirdColor);
+    color: var(--forthColor);
+}
+
+.reseat:hover{
+    background-color: var(--backgroundColor);
+    color: var(--primaryColor);
+}
+
+.send{
+    width: 46%;
+    align-content: center;
+    border: none;
+    border-radius: 15px;
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: 1rem;
+
+    background-color: var( --thirdColor);
+    color: var(--forthColor);
+
+
+}
+
+.send:hover{
+    background-color: var(--backgroundColor);
+    color: var(--primaryColor);
+}
+
+/*cuenta - inicio sesión*/
+p{
+    color: var(--primaryColor);
+    font-weight: bolder;
+    padding-left: 100px;
+}
+
+span{
+    color: #00669F;
+    padding-left: 5px;
+}
+
+span:hover{
+    text-decoration: underline;
+}
+
+/*footer-derechos y redes*/
+footer{
+    background-color: var(--primaryColor);
+    bottom: 0%;
+    width: 100%;
+    padding: 5px;
+    margin-top: 28px;
+    text-align: center;
+}
+
+.piePagina{
+    font-size: 1rem;
+    color: var(--forthColor);
+    font-size: 1rem;
+}

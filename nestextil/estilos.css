@@ -1,0 +1,267 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+}
+
+:root{
+    --primaryColor:  #222222;
+    --secondaryColor:  #CE8272;
+    --thirdColor:  #cca17e;
+    --forthColor: #fff;
+    --backgroundColor:  #A0A0A0;
+}
+
+/*encabezado y menu*/
+p{
+    font-size: 2.5rem;
+}
+
+li{
+    list-style: none;
+    margin-right: 35px;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+}
+
+.oferta{
+    padding: 4px;
+    padding-left: 20px;
+    background-color: var( --secondaryColor);
+    color: var(--primaryColor);
+    font-weight: bolder;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.oferta:hover{
+    background-color: var(--forthColor);
+    color: var(--primaryColor);
+}
+
+/*banner*/
+.titular{
+    text-align: center;
+    margin-top: 200px;
+}
+
+h1{
+    font-size: 3rem;
+    margin: 15px;
+}
+
+h2{
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.btn{
+    font-size: 1rem;
+    background: var( --secondaryColor);
+    border-radius: 3px;
+    padding: 20px 30px 20px 30px;
+    text-transform: uppercase;
+    animation-name: girar;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    border: none;
+}
+
+.btn:hover{
+    background-color: var(--thirdColor);
+}
+
+.mail{
+    font-size: 1rem;
+    color: var(--forthColor);
+}
+
+a{
+    text-decoration: none;
+    color: var(--primaryColor);
+}
+
+header{
+    background: url(img/fondo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 580px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+/*carousel*/
+.contenedor{
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+
+.owlcarousel{
+    justify-content: space-around;
+    padding: 50px 40px 50px 40px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+span{
+    font-size: 2.5rem;
+    color: var(--forthColor);
+}
+
+.owl-nav{
+    text-align: center;
+}
+
+/*conoce nuestra tienda*/
+h3{
+    text-align: center;
+    margin-bottom: 28px;
+    padding: 10px;
+    color: var( --secondaryColor);
+}
+
+#nestienda,
+.tienda{
+    margin: auto; 
+    margin-top: 16px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*banner novedades*/
+.banner{
+    background-color: var(--thirdColor);
+    height: 30vh;
+    color: var(--forthColor);
+    min-width: 320px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+}
+    
+.banner-novedades{
+    display: flex;
+    align-items: center;
+}
+    
+.banner-titulo{
+    color: var(--forthColor);
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+/*formulario banner*/
+.subscripcion-formulario-input{
+    width: 300px;
+    padding: 15px 8px;
+    color: var(--backgroundColor);
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 3px;
+}
+    
+.subscripcion-formulario-send{
+    background-color: var(--primaryColor);
+    padding: 14px 13px;
+    color: var(--forthColor);
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 17px;
+}
+    
+.subscripcion-formulario-send:hover{
+    background-color: var(--backgroundColor);
+    color: var(--primaryColor);
+}
+
+/*footer-derechos y redes*/
+.redes{
+    background-color: var(--thirdColor);
+    color: var(--forthColor);
+    padding: 5px;
+    font-size: 2rem;
+    align-items: flex-end;
+}
+
+.redes i:hover{
+    padding: 10px;
+    transform: scale(1.3);
+    transition-duration: 3s;
+    transition-timing-function: ease;
+}
+
+h4{
+    text-align: left;
+}
+
+#ingreso{
+    font-size: 20px;
+    width: 40%;
+    background: var(--forthColor);
+    margin-bottom: auto;
+}
+
+.contenedor-email{
+    width: 130%;
+}
+
+footer{
+    background-color: var(--primaryColor);
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+.piePagina{
+    font-size: 1rem;
+    color: var(--forthColor);
+    font-size: 1rem;
+}
+
+/*Media Queries*/
+@media (min-width: 320px) and (max-width: 768px) {
+
+    #button1, #button2, #button3, #button4 {
+       display: none;
+    }
+   
+    .btn{
+
+        justify-content: center;
+    }
+
+    .banner{
+        flex-direction: column;
+    }
+   
+} 
+@media (min-width: 769px)  {
+
+    #buttonMobile {
+        display: none;
+    }
+}
